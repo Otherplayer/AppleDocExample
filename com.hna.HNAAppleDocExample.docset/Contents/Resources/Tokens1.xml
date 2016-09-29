@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AppleDocExample.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AppleDocExample</TokenIdentifier>
+			<Abstract type="html">第一行是类的简介</Abstract>
+			<DeclaredIn>AppleDocExample.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppleDocExample/setName:</TokenIdentifier>
+			<Abstract type="html">这里是属性的说明</Abstract>
+			<DeclaredIn>AppleDocExample.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppleDocExample/name</TokenIdentifier>
+			<Abstract type="html">这里是属性的说明</Abstract>
+			<DeclaredIn>AppleDocExample.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AppleDocExample/name</TokenIdentifier>
+			<Abstract type="html">这里是属性的说明</Abstract>
+			<DeclaredIn>AppleDocExample.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AppleDocExample/colorWithRed:green:blue:</TokenIdentifier>
+			<Abstract type="html">这里是方法的简介。该Tag不能放到类注释里。</Abstract>
+			<DeclaredIn>AppleDocExample.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/AppleDocExample/someMethod:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (UIColor *)colorWithRed:(int)red green:(int)green blue:(int)blue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>red</Name>
+					<Abstract type="html">这里是参数说明1</Abstract>
+				</Parameter><Parameter>
+					<Name>green</Name>
+					<Abstract type="html">这里是参数说明2</Abstract>
+				</Parameter><Parameter>
+					<Name>blue</Name>
+					<Abstract type="html">这里是参数说明3</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">这里是返回值说明</Abstract></ReturnValue>
+			<Anchor>//api/name/colorWithRed:green:blue:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

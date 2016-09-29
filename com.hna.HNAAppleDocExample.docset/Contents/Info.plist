@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.ibireme.myproject.MyProject</string>
+	<string>com.hna.HNAAppleDocExample</string>
 	<key>CFBundleName</key>
-	<string>MyProject Documentation</string>
+	<string>HNAAppleDocExample Documentation</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -15,20 +15,23 @@
 	
 	
 	
-	
+	<key>DocSetFallbackURL</key>
+	<string>http://hna.com/hna</string>
 	<key>DocSetFeedName</key>
-	<string>MyProject Documentation</string>
-	
+	<string>HNAAppleDocExample Documentation</string>
+	<key>DocSetFeedURL</key>
+	<string>http://hna.com/hna/hna.atom</string>
 	<key>DocSetMinimumXcodeVersion</key>
 	<string>3.0</string>
-	
+	<key>DocSetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>DashDocSetFamily</key>
 	<string>appledoc</string>
 	<key>DocSetPublisherIdentifier</key>
-	<string>com.ibireme.myproject.documentation</string>
+	<string>com.hna.documentation</string>
 	<key>DocSetPublisherName</key>
-	<string>ibireme</string>
+	<string>hna</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2016 ibireme. All rights reserved.</string>
+	<string>Copyright © 2016 hna. All rights reserved.</string>
 </dict>
 </plist>

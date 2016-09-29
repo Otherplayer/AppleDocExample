@@ -6,6 +6,39 @@
 //  Copyright © 2016年 __无邪_. All rights reserved.
 //
 
+
+/** 
+    appledoc --project-name MyProject --project-company ibireme ./
+ */
+/**
+    #appledoc Xcode script
+    # Start constants
+    company="ACME";
+    companyID="com.ACME";
+    companyURL="http://ACME.com";
+    target="iphoneos";
+    #target="macosx";
+    outputPath="~/help";
+    # End constants
+    /usr/local/bin/appledoc \
+    --project-name "${PROJECT_NAME}" \
+    --project-company "${company}" \
+    --company-id "${companyID}" \
+    --docset-atom-filename "${company}.atom" \
+    --docset-feed-url "${companyURL}/${company}/%DOCSETATOMFILENAME" \
+    --docset-package-url "${companyURL}/${company}/%DOCSETPACKAGEFILENAME" \
+    --docset-fallback-url "${companyURL}/${company}" \
+    --output "${outputPath}" \
+    --publish-docset \
+    --docset-platform-family "${target}" \
+    --logformat xcode \
+    --keep-intermediate-files \
+    --no-repeat-first-par \
+    --no-warn-invalid-crossref \
+    --exit-threshold 2 \
+    "${PROJECT_DIR}"
+ */
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
@@ -66,12 +99,11 @@
  
  这里会引用到一个代码块
  
- void CMYK2RGB(float c, float m, float y, float k,
- float *r, float *g, float *b) {
- *r = (1 - c) * (1 - k);
- *g = (1 - m) * (1 - k);
- *b = (1 - y) * (1 - k);
- }
+    void CMYK2RGB(float c, float m, float y, float k,float *r, float *g, float *b) {
+        *r = (1 - c) * (1 - k);
+        *g = (1 - m) * (1 - k);
+        *b = (1 - y) * (1 - k);
+    }
  
  @since iOS5.0
  
