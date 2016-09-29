@@ -8,7 +8,7 @@
 
 
 /** 
-    appledoc --project-name MyProject --project-company ibireme ./
+    appledoc --project-name MyProject --project-company MyCompany ./
  */
 /**
     #appledoc Xcode script
