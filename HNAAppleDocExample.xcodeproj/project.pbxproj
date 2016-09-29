@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		638C99EE1D9D145C00A788E2 /* AppleDoc */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 638C99EF1D9D145C00A788E2 /* Build configuration list for PBXAggregateTarget "AppleDoc" */;
+			buildPhases = (
+				638C99F21D9D147000A788E2 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = AppleDoc;
+			productName = AppleDoc;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		638C99D61D9D124B00A788E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 638C99D51D9D124B00A788E2 /* main.m */; };
 		638C99D91D9D124B00A788E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 638C99D81D9D124B00A788E2 /* AppDelegate.m */; };
@@ -116,6 +130,9 @@
 					638C99D01D9D124B00A788E2 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					638C99EE1D9D145C00A788E2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 638C99CC1D9D124B00A788E2 /* Build configuration list for PBXProject "HNAAppleDocExample" */;
@@ -132,6 +149,7 @@
 			projectRoot = "";
 			targets = (
 				638C99D01D9D124B00A788E2 /* HNAAppleDocExample */,
+				638C99EE1D9D145C00A788E2 /* AppleDoc */,
 			);
 		};
 /* End PBXProject section */
@@ -148,6 +166,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		638C99F21D9D147000A788E2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"hna\";\ncompanyID=\"com.hna\";\ncompanyURL=\"http://hna.com\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"~/help\";\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		638C99CD1D9D124B00A788E2 /* Sources */ = {
@@ -289,6 +323,20 @@
 			};
 			name = Release;
 		};
+		638C99F01D9D145C00A788E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		638C99F11D9D145C00A788E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -306,6 +354,14 @@
 			buildConfigurations = (
 				638C99E91D9D124B00A788E2 /* Debug */,
 				638C99EA1D9D124B00A788E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		638C99EF1D9D145C00A788E2 /* Build configuration list for PBXAggregateTarget "AppleDoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638C99F01D9D145C00A788E2 /* Debug */,
+				638C99F11D9D145C00A788E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
